@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'codropsicons';
+    src: url('../fonts/codropsicons/codropsicons.eot');
+    src: url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'), url('../fonts/codropsicons/codropsicons.woff') format('woff'), url('../fonts/codropsicons/codropsicons.ttf') format('truetype'), url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.nav {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	flex-direction: row;
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 60px;
+	z-index: 9999;
+	text-align: center;
+}
+.nav a {
+	text-decoration: none;
+	color: #7D383B;
+	height: 50px;
+	font-size: 25px;
+	margin-left: 20px;
+	font-weight: bold;
+	line-height: 50px;
+}
+.nav a:hover {
+	color: #161415;
+}
+
+
+
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+div{
+    /* border:1px solid green; */
+    margin: auto;
+    display: inline-block;
+    text-align: left;
+  }
+
+
+body,
+html {
+    font-size: 100%;
+    background-color: #FDFAF5;
+    padding: 0;
+    margin: 0;
+    height:auto;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: "Microsoft YaHei", "å®‹ä½“", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif, FreeSans, Arimo;
+    color: none;
+    background: none;
+    height:100%;
+    _height:100%
+}
+
+a {
+    color: #EB9DAA;
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: #333;
+}
+
+/* Header Style */
+
+.main,
+.container>header {
+    margin: 0 auto;
+    /*padding: 2em;*/
+}
+
+.container>header {
+    text-align: center;
+    background: none;
+    /*padding: 3em;*/
+}
+
+.container>header h1 {
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 300;
+}
+
+.container>header span {
+    display: block;
+    font-size: 60%;
+    opacity: 0.7;
+    padding: 0 0 0.6em 0.1em;
+}
+
+/* Main Content */
+
+.main {
+    height: 100vh; 
+    min-height: 40em;
+    width: 141.4vh; 
+    min-width: calc(9094/6431*40em);
+    text-align: center; 
+    background: url('../images/background.jpg') center center no-repeat; 
+    background-size: auto 100%; 
+}
+
+.column1 {
+    float: left;
+    /* width: calc(80%*141.4vh); */
+    /* min-width: calc(80%*9094/6431*50em); */
+    /* height: 27vh; 
+    min-height: calc(0.27*50em);  */
+    padding: 0 0em;
+    position: relative;
+}
+
+.column2 {
+    float: left;
+    padding: 0 0em;
+    min-height: 300px;
+    position: relative;
+}
+
+button {
+    border: none;
+    padding: 0em 0em;
+    background: none;
+    float: left;
+    color: #fff;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0px 0px;
+    border-radius: 2px;
+}
+
+button:hover {
+    /* background:rgba(205,174,179, 0.6); */
+}
+
+/* To Navigation Style */
+
+.codrops-top {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 0.69em;
+    line-height: 2.2;
+}
+
+.codrops-top a {
+    padding: 0 1em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+}
+
+.codrops-top a:hover {
+    color: #e74c3c;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.codrops-top span.right {
+    float: right;
+}
+
+.codrops-top span.right a {
+    float: left;
+    display: block;
+}
+
+.codrops-icon:before {
+    font-family: 'codropsicons';
+    margin: 0 4px;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+    content: "\e001";
+}
+
+.codrops-icon-prev:before {
+    content: "\e004";
+}
+
+
+@media screen and (max-width: 46.0625em) {
+    .column {
+        width: 100%;
+        min-width: auto;
+        min-height: auto;
+        padding: 1em;
+    }
+    .column p {
+        text-align: left;
+        font-size: 1.5em;
+    }
+    .column:nth-child(2) {
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 25em) {
+    .codrops-icon span {
+        display: none;
+    }
+}
